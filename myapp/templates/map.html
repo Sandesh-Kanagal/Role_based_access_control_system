@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Users to API</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Map Users to API</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="apiId" class="form-label">API ID:</label>
+                <input type="number" class="form-control" id="apiId" name="id" required>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">User id:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Map Users</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS scripts (if required) -->
+    <!-- These scripts require a working internet connection to fetch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+    <!-- Add Bootstrap JS scripts (if required) -->
+    <!-- These scripts require a working internet connection to fetch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZzXpvo1QeX5+RDjgJ1Tk5n2GQLzZ2FePjX1uz7pDkUyIh7BqK1RxgMGamFUhjJlZ" crossorigin="anonymous"></script>
+</body>
+</html>

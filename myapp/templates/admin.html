@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home page</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Welcome to RBAC</h1>
+        {% csrf_token %}
+        <div class="col-md-4 mb-3">
+            <button type="submit" style="color: white; text-decoration: none;" class="btn btn-primary"><a href="http://127.0.0.1:8000/logout" class="text-white">LOG OUT</a></button>
+        </div>
+        <br>
+        <h6>Your Token: {{ token }}</h6>
+        <br>
+        {% csrf_token %}
+        <!-- <div class="col-md-4 mb-3">
+            <button type="submit" style="color: white; text-decoration: none;" class="btn btn-primary"><a href="http://127.0.0.1:8000/logout" class="text-white">LOG OUT</a></button>
+        </div> -->
+
+        <div class="row">
+            
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-block"><a href="http://127.0.0.1:8000/register/" class="text-white" target="_blank">Create User</a></button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-block"><a href="http://127.0.0.1:8000/listUsers" class="text-white" target="_blank">View User</a></button>
+            </div>
+           
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-block"><a href="http://127.0.0.1:8000/createAPI" class="text-white" target="_blank">Create API</a></button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-block"><a href="http://127.0.0.1:8000/ProtectedAPI" class="text-white" target="_blank">View API</a></button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
